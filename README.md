@@ -19,10 +19,6 @@ Sitio web institucional para PROELEC, una casa de electricidad con más de 20 a�
 - Diseño responsive y optimizado para móviles
 - Animaciones suaves al hacer scroll (Motion)
 
-## 📁 Estructura del proyecto
-
-<pre> ```text /app └── page.js # Página principal /components ├── AboutUs.jsx # Sección "Sobre Nosotros" ├── ContactForm.jsx # Formulario de contacto ├── Container.jsx # Contenedor layout general ├── HomeComponent.jsx # Contenido principal de inicio ├── Navbar.jsx # Barra de navegación ├── ProveedorCard.jsx # Tarjeta individual de proveedor └── SocialButton.jsx # Botón de WhatsApp / redes sociales /data └── proveedores.json # Lista de proveedores con title, logo y link /public ├── proeleclogo.png └── logos/ # Carpeta con logos de proveedores ``` </pre>
-
 ## 🛠️ Por hacer
 
 -Conexión real al formulario (EmailJS, Formspree, etc.)
