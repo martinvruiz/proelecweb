@@ -1,0 +1,102 @@
+[
+  {
+    "title": "General Electric",
+    "logo": "/logos/logo-ge.png",
+    "link": "https://www.geindustrial.com.ar/home"
+  },
+  {
+    "title": "ABB",
+    "logo": "/logos/ABB_logo.svg",
+    "link": "https://new.abb.com/south-america"
+  },
+  {
+    "title": "Siemens",
+    "logo": "/logos/Siemens_logo.svg",
+    "link": "https://www.siemens.com/ar/es.html?acz=1&gad_campaignid=9569247756"
+  },
+  {
+    "title": "Baw",
+    "logo": "/logos/Baw_logo.svg",
+    "link": "https://bawelectric.com/"
+  },
+  {
+    "title": "Neutroluz",
+    "logo": "/logos/neutroluz_logo.png",
+    "link": "https://neutroluz.com.ar/"
+  },
+  {
+    "title": "Kalop",
+    "logo": "/logos/kalop_logo.webp",
+    "link": "https://kalop.com.ar/"
+  },
+  {
+    "title": "Cambre",
+    "logo": "/logos/cambre-logo.png",
+    "link": "https://cambre.com.ar/"
+  },
+  {
+    "title": "Jeluz",
+    "logo": "/logos/jeluz-logo.png",
+    "link": "https://jeluz.net/"
+  },
+  {
+    "title": "Sica",
+    "logo": "/logos/sica-logo.png",
+    "link": "https://tienda.sicaelec.com/"
+  },
+  {
+    "title": "Sanderson",
+    "logo": "/logos/logo_Sanderson.jpg",
+    "link": "https://sanderson.com.ar/"
+  },
+  {
+    "title": "Roker",
+    "logo": "/logos/roker-logo.png",
+    "link": "https://www.roker.com.ar/"
+  },
+  {
+    "title": "Stanley",
+    "logo": "/logos/stanley-logo.png",
+    "link": "https://ar.stanleytools.global/"
+  },
+  {
+    "title": "Interelec",
+    "logo": "/logos/interelec_logo.svg",
+    "link": "https://interelec.com.ar/"
+  },
+  {
+    "title": "Spotsline",
+    "logo": "/logos/spots-logo.png",
+    "link": "https://www.spotsline.com.ar/"
+  },
+  {
+    "title": "Faroluz",
+    "logo": "/logos/logo-faroluz.jpg",
+    "link": "https://www.faroluz.com.ar/"
+  },
+  {
+    "title": "TBCin",
+    "logo": "/logos/tbcin-logo.png",
+    "link": "https://www.tbcin.com.ar/"
+  },
+  {
+    "title": "Gabexel",
+    "logo": "/logos/gabexel-logo.png",
+    "link": "https://www.gabexel.com.ar/"
+  },
+  {
+    "title": "Elece",
+    "logo": "/logos/logo-elece.svg",
+    "link": "http://elece.com.ar/"
+  },
+  {
+    "title": "Senlis",
+    "logo": "/logos/logo-senlis.png",
+    "link": "https://senlis.com.ar/"
+  },
+  {
+    "title": "Commax",
+    "logo": "/logos/commax-logo.png",
+    "link": "https://commax.com.ar/"
+  }
+]

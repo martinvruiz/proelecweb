@@ -1,103 +1,67 @@
+"use client";
 import Image from "next/image";
+import { motion } from "motion/react";
+import AboutUs from "./components/AboutUs";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col items-center text-white w-full">
+      <div className="w-full h-[150px] md:h-[250px] bg-[#0F1B2B] flex flex-col md:flex-row items-center justify-center shadow-xl">
+        <div className="w-1/2 h-full flex items-center justify-center">
+          <Image
+            alt="logo proelec"
+            src="/proeleclogo.png"
+            width={300}
+            height={300}
+            sizes="100vw"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="w-1/2 p-8 text-white text-center text-5xl hidden md:block">
+          <h1>Tu casa de electricidad de confianza</h1>
+        </div>
+      </div>
+      <div className="w-full flex flex-col items-center p-4">
+        <AboutUs />
+      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="w-3/4 bg-[#0F1B2B] text-center flex flex-col items-center p-6 rounded-xl"
+      >
+        <h3 className="text-3xl text-white font-semibold">
+          Hace mas de 20 años presentes
+        </h3>
+        <p className="text-xl text-white text-center mt-2 md:px-20 px-4">
+          A lo largo de nuestra trayectoria, nos consolidamos como una
+          referencia en materiales eléctricos, brindando calidad, confianza y
+          experiencia.
+        </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="w-full bg-[#0F1B2B] mt-6 p-4 flex flex-col items-center shadow-lg"
+      >
+        <h3 className="text-4xl text-white">Veni a visitarnos!</h3>
+        <div className="p-4 flex flex-col md:flex-row items-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.123471353142!2d-58.51174472509685!3d-34.6263199586907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc832d5ec4d33%3A0xfa5931c13d589ba2!2sPROELEC.%20MATERIALES%20EL%C3%89CTRICOS!5e0!3m2!1ses!2sar!4v1754489279757!5m2!1ses!2sar"
+            className="rounded-xl shadow-lg w-3/4 h-64 md:w-1/2 md:h-48"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div className="text-lg text-center mt-2 md:mt-0 md:ml-6 text-white">
+            <p>Estamos en Av Lope de Vega 1484</p>
+            <p>Lunes a viernes de 8 a 18hs</p>
+            <p>Tel: 21296077</p>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 }

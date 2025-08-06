@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ⚡ PROELEC – Casa de Electricidad
 
-## Getting Started
+Sitio web institucional para PROELEC, una casa de electricidad con más de 20 años de experiencia en el rubro. El sitio permite a los visitantes conocer la empresa, sus proveedores, la ubicación y contactar fácilmente vía WhatsApp o formulario.
 
-First, run the development server:
+## 🚀 Tecnologías utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Motion](https://motion.dev/) (animaciones)
+- [Google Maps Embed](https://developers.google.com/maps)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🖼️ Funcionalidades
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Página de inicio con presentación institucional
+- Sección de proveedores (logos clickeables)
+- Formulario de contacto funcional
+- Botón directo a WhatsApp
+- Mapa embebido con la ubicación
+- Diseño responsive y optimizado para móviles
+- Animaciones suaves al hacer scroll (Framer Motion)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Estructura del proyecto
 
-## Learn More
+/app
+└── page.js
+└── contacto/
+└── proveedores/
+└── components/
+└──ContactoForm.jsx
+└──Proveedores.jsx
+└──ProveedorCard.jsx
+/public
+└── logos/
+└── proeleclogo.png
+/data
+└── proveedores.json
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Por hacer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-Conexión real al formulario (EmailJS, Formspree, etc.)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-SEO mejorado
 
-## Deploy on Vercel
+-Favicon personalizado
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 Desarrollado por
+MartinVillaloRuiz – Frontend Developer
