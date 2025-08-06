@@ -1,6 +1,6 @@
 # ⚡ PROELEC – Casa de Electricidad
 
-Sitio web institucional para PROELEC, una casa de electricidad con más de 20 años de experiencia en el rubro. El sitio permite a los visitantes conocer la empresa, sus proveedores, la ubicación y contactar fácilmente vía WhatsApp o formulario.
+Sitio web institucional para PROELEC, una casa de electricidad con más de 20 años de experiencia. El sitio permite a los visitantes conocer la empresa, sus proveedores, la ubicación y contactar fácilmente vía WhatsApp o formulario.
 
 ## 🚀 Tecnologías utilizadas
 
@@ -17,23 +17,11 @@ Sitio web institucional para PROELEC, una casa de electricidad con más de 20 a�
 - Botón directo a WhatsApp
 - Mapa embebido con la ubicación
 - Diseño responsive y optimizado para móviles
-- Animaciones suaves al hacer scroll (Framer Motion)
+- Animaciones suaves al hacer scroll (Motion)
 
 ## 📁 Estructura del proyecto
 
-/app
-└── page.js
-└── contacto/
-└── proveedores/
-└── components/
-└──ContactoForm.jsx
-└──Proveedores.jsx
-└──ProveedorCard.jsx
-/public
-└── logos/
-└── proeleclogo.png
-/data
-└── proveedores.json
+<pre> ```text /app └── page.js # Página principal /components ├── AboutUs.jsx # Sección "Sobre Nosotros" ├── ContactForm.jsx # Formulario de contacto ├── Container.jsx # Contenedor layout general ├── HomeComponent.jsx # Contenido principal de inicio ├── Navbar.jsx # Barra de navegación ├── ProveedorCard.jsx # Tarjeta individual de proveedor └── SocialButton.jsx # Botón de WhatsApp / redes sociales /data └── proveedores.json # Lista de proveedores con title, logo y link /public ├── proeleclogo.png └── logos/ # Carpeta con logos de proveedores ``` </pre>
 
 ## 🛠️ Por hacer
 
