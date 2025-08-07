@@ -16,7 +16,9 @@ export default function ProveedorCard({ title, logo, link }) {
           className="object-contain"
         />
       </div>
-      <p className="text-center text-sm font-medium text-[#1B2A41]">{title}</p>
+      <div className="w-full bg-[#1B2A41] p-2 rounded-xl">
+        <p className="text-center font-medium  text-white">{title}</p>
+      </div>
     </a>
   );
 }

@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import AboutUs from "./components/AboutUs";
+import MapComponent from "./components/MapComponent";
+import HomeComponent from "./components/HomeComponent";
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
           <h1>Tu casa de electricidad de confianza</h1>
         </div>
       </div>
-      <div className="w-full flex flex-col items-center p-4">
+      <div className="w-3/4 flex flex-col items-center">
         <AboutUs />
       </div>
       <motion.div
@@ -40,27 +42,56 @@ export default function Home() {
         </p>
       </motion.div>
       <motion.div
+        className="w-3/4 my-2 text-center flex flex-col items-center rounded-xl"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true, amount: 0.2 }}
-        className="w-full bg-[#0F1B2B] mt-6 p-4 flex flex-col items-center shadow-lg"
       >
-        <h3 className="text-4xl text-white">Veni a visitarnos!</h3>
-        <div className="p-4 flex flex-col md:flex-row items-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.123471353142!2d-58.51174472509685!3d-34.6263199586907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc832d5ec4d33%3A0xfa5931c13d589ba2!2sPROELEC.%20MATERIALES%20EL%C3%89CTRICOS!5e0!3m2!1ses!2sar!4v1754489279757!5m2!1ses!2sar"
-            className="rounded-xl shadow-lg w-3/4 h-64 md:w-1/2 md:h-48"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <div className="text-lg text-center mt-2 md:mt-0 md:ml-6 text-white">
-            <p>Estamos en Av Lope de Vega 1484</p>
-            <p>Lunes a viernes de 8 a 18hs</p>
-            <p>Tel: 21296077</p>
-          </div>
+        <h3 className="text-[#0F1B2B] mt-2 mb-6 text-4xl">
+          ¿Porqué elegirnos?
+        </h3>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <motion.div
+            className="w-full"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <HomeComponent
+              title={"Calidad y compromiso"}
+              description={
+                "Trabajamos con primeras marcas y materiales certificados para garantizar instalaciones seguras y duraderas. Elegirnos es apostar por la calidad y la tranquilidad de estar bien asesorado."
+              }
+              className="w-full"
+            />
+          </motion.div>
+          <motion.div
+            className="w-full"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <HomeComponent
+              title={"Atención personalizada"}
+              description={
+                "Entendemos las necesidades de cada cliente, ofreciendo soluciones a medida con trato cercano, ágil y profesional. En PROELEC, tu proyecto importa tanto como a vos."
+              }
+              className="w-full"
+            />
+          </motion.div>
         </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="w-full bg-[#0F1B2B] p-4 flex flex-col items-center shadow-lg"
+      >
+        <MapComponent />
       </motion.div>
     </div>
   );
