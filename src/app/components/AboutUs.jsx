@@ -13,7 +13,7 @@ export default function AboutUs() {
         className="md:w-1/3 w-full"
       >
         <HomeComponent
-          title={"Nosotros"}
+          title={"Conocenos"}
           description={
             "Nos especializamos en brindar soluciones eléctricas confiables y de calidad tanto para hogares como para industrias."
           }
@@ -28,7 +28,7 @@ export default function AboutUs() {
         className="md:w-1/3 w-full"
       >
         <HomeComponent
-          title={"Calidad"}
+          title={"Soluciones"}
           description={
             "Ofrecemos una amplia variedad de productos eléctricos, desde cables, luminarias y disyuntores, hasta tecnología LED y soluciones de automatización."
           }
@@ -43,9 +43,9 @@ export default function AboutUs() {
         className="md:w-1/3 w-full"
       >
         <HomeComponent
-          title={"Atención"}
+          title={"Clientes"}
           description={
-            "Nos destacamos por la atención personalizada, el asesoramiento técnico y el compromiso con cada cliente."
+            "Nos destacamos por la atención, el asesoramiento técnico y el compromiso con cada uno."
           }
           className="w-full"
         />
